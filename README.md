@@ -37,7 +37,7 @@ Figure 1: The structure comparison between original FNO and One-connection FNO. 
 
 ## 3. Training Setup
 
-- **Input:** 2D elastics parameters (`Vp, Vs, $\rho$`) $\rho$
+- **Input:** 2D elastics parameters (`Vp, Vs', $\rho$)
 - **Output:** Wavefields (e.g., `Vx`, shape: `[nx, nz, nt]`)
 - **Loss function:** MSE between predicted and true wavefields
 - **Data format:** `.mat` files converted to `.pt` for PyTorch
