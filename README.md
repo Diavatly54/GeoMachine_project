@@ -1,7 +1,5 @@
 # GeoMachine_project
 In this project, we aim to train the model for PSV operator to get the seismic wavefield.
-
-![OCFNO](OCFNO_wf.png)
 ![OCFNO1](workflow.jpeg)
 
 
