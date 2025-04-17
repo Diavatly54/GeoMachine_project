@@ -82,7 +82,7 @@ Future work includes extending to 3D models, multi-component wavefields, and inv
 1. [Fourier Neural Operator paper](https://arxiv.org/abs/2010.08895)
 
 
-2. [Learning to solve the elastic wave equation with Fourier neural operators]([https://arxiv.org/abs/2010.08895](https://library.seg.org/doi/epub/10.1190/geo2022-0268.1))
+2. [Learning to solve the elastic wave equation with Fourier neural operators](https://library.seg.org/doi/epub/10.1190/geo2022-0268.1)
 
 ---
 
