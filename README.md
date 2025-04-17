@@ -45,24 +45,18 @@ Figure 2: The structure comparison between original FNO and One-connection FNO. 
 - **Input:** 2D elastics parameters (`Vp, Vs`, $\rho$) and `Vx` wavefield with  first `it` timesteps.
 - **Output:** `Vx` Wavefields with 300 timesteps (shape: `[nx, nz, nt]`)
 - **Loss function:** MSE between predicted and true wavefields
-- **Framework:** PyTorch + Neural Operator Library (`neuralop` or custom FNO implementation)
+- **Framework:** PyTorch
 
 ---
 
 ## 4. Results
 
-The trained FNO model can accurately approximate the wavefield given unseen velocity models.
+The trained OCFNO model is named as 'Final_project.ipynb'. 
 
 Qualitative Comparison:
-
 Performance:
-
 Speedup: ~50x compared to finite-difference method
-
 MSE: ~1e-4 on test set
-
-Generalization: good performance on unseen geological patterns
-
 
 ---
 ## 5. Conclusion
