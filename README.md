@@ -1,6 +1,6 @@
-# GeoMachine_project
+# Geo_Machine__Final_project
 
-# Fourier Neural Operator (FNO) for Seismic Wave Propagation
+# Approximation of Seismic Wave Propagation operator by Fourier Neural Operator (FNO)
 
 This project explores the use of **Fourier Neural Operators (FNO)** to approximate forward seismic wave propagation in 2D velocity models. By learning the mapping from velocity models to seismic wavefields, FNO offers a fast and efficient alternative to traditional finite-difference solvers.
 
