@@ -57,7 +57,7 @@ for epoch in range(num_epochs):
         optimizer.step()
 
 
-
+---
 ## 4. Results
 The trained FNO model can accurately approximate the wavefield given unseen velocity models.
 
@@ -71,7 +71,7 @@ MSE: ~1e-4 on test set
 
 Generalization: good performance on unseen geological patterns
 
-
+---
 ## 5. Conclusion
 Fourier Neural Operators provide a powerful tool for approximating wave propagation in geophysics. With minimal runtime and strong generalization, they open new possibilities for:
 
