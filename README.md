@@ -54,9 +54,15 @@ Figure 2: The structure comparison between original FNO and One-connection FNO. 
 The trained OCFNO model is named as 'Final_project.ipynb'. 
 
 Qualitative Comparison:
-Performance: test
-Speedup: ~50x compared to finite-difference method
-MSE: ~1e-4 on test set
+Performance: 
+Speedup: ~3x compared to finite-difference method
+Loss function:
++ Training loss
+![](lost_train.png)
+
++ Test loss
+![](loss_test.png)
+
 
 ---
 ## 5. Conclusion
