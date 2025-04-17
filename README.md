@@ -31,7 +31,7 @@ FNO is a type of neural operator designed to learn mappings between infinite-dim
 In this project, I aim to train the model for PSV operator to get the seismic wavefield. I utilized the OCFNO (One-connection FNO)
 
 ![OCFNO1](workflow.jpeg)
-*Figure 1: The structure comparison between original FNO and One-connection FNO. C is convolution; Uₗ and U_l+1 are the input and the output*
+*Figure 1: The structure comparison between original FNO and One-connection FNO. C is convolution; Uₗ and U_l+1 are the input and the output of the lth Fourier layer, respectively; B - bach-normalization operation; $F_c$ *
 
 ---
 
