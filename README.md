@@ -15,8 +15,11 @@ Forward modeling is a key component in seismic imaging, used to simulate how sei
 - Time-consuming simulations
 - Difficulty scaling to large datasets
 
-I aim to train a neural operator that can learn this complex physical mapping and generalize across multiple velocity models with similar pattern in 
+I aim to train a neural operator that can learn this complex physical mapping and generalize across multiple velocity models with similar pattern from FTDT. 
+
 ![wavefield](output.gif)
+
+
 Figure 1. Vx wavefield propagation calculated from FTDT.
 
 ---
