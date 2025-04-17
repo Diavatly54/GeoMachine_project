@@ -47,16 +47,6 @@ In our context, FNO learns the mapping:
 - **Data format:** `.mat` files converted to `.pt` for PyTorch
 - **Framework:** PyTorch + Neural Operator Library (`neuralop` or custom FNO implementation)
 
-```python
-# Example training loop
-for epoch in range(num_epochs):
-    for velocity, wavefield in dataloader:
-        pred = fno(velocity)
-        loss = mse_loss(pred, wavefield)
-        loss.backward()
-        optimizer.step()
-
-
 ---
 
 ## 4. Results
@@ -73,21 +63,6 @@ MSE: ~1e-4 on test set
 
 Generalization: good performance on unseen geological patterns
 
-
----
-
-## 4. Results
-The trained FNO model can accurately approximate the wavefield given unseen velocity models.
-
-Qualitative Comparison:
-
-Performance:
-
-Speedup: ~50x compared to finite-difference method
-
-MSE: ~1e-4 on test set
-
-Generalization: good performance on unseen geological patterns
 
 ---
 ## 5. Conclusion
@@ -103,8 +78,7 @@ Future work includes extending to 3D models, multi-component wavefields, and inv
 
 
 ---
-
-🔗 References
+## 🔗 References
 1. [Fourier Neural Operator paper](https://arxiv.org/abs/2010.08895)
 
 
