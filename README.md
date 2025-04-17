@@ -1,9 +1,4 @@
 # GeoMachine_project
-In this project, we aim to train the model for PSV operator to get the seismic wavefield.
-![OCFNO1](workflow.jpeg)
-
-
-
 
 # Fourier Neural Operator (FNO) for Seismic Wave Propagation
 
@@ -33,9 +28,10 @@ FNO is a type of neural operator designed to learn mappings between infinite-dim
 - No need for local kernels like in CNNs
 - Captures long-range dependencies efficiently
 
-In our context, FNO learns the mapping:
+In this project, I aim to train the model for PSV operator to get the seismic wavefield. I utilized the OCFNO (One-connection FNO)
 
-
+![OCFNO1](workflow.jpeg)
+*Figure 1: The structure comparison between original FNO and One-connection FNO. C is convolution; $U_l$ and $U_l+1$ are the input and the output*
 
 ---
 
