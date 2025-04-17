@@ -64,25 +64,23 @@ Figure 2: The structure comparison between original FNO and One-connection FNO. 
 
 The trained OCFNO model is named as 'Final_project.ipynb'. 
 
-Qualitative Comparison:
-Performance: 
-Speedup: ~3x compared to finite-difference method
-Loss function:
+Speedup: ~3x compared to finite-difference method (2s vs 6s)
+Performance:
+1. Vp velocity model
 
 
+![Velocity](Vp_predicted_model.png)
+
+
+2. Comparison of Vx wavefield from FTDT and FNO
+
+![Vx_wavefield](Vx_comparison.gif)
 
 
 ---
 ## 5. Conclusion
-Fourier Neural Operators provide a powerful tool for approximating wave propagation in geophysics. With minimal runtime and strong generalization, they open new possibilities for:
-
-Real-time modeling
-
-Fast inversion workflows
-
-Large-scale simulations in exploration geophysics
-
-Future work includes extending to 3D models, multi-component wavefields, and inverse problems.
++ The Vx wavefield from OCFNO is not similar as one derived from FTDT for later time step. This is attributed to the lack of parameter model and number of dataset to train the model.
++ In the future, with more time and effort, the operator will be better.
 
 
 ---
