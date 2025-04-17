@@ -42,7 +42,7 @@ Figure 2: The structure comparison between original FNO and One-connection FNO. 
 
 ## 3. Training Setup
 
-- **Input:** 2D elastics parameters (`Vp, Vs`, $\rho$) and `Vx` wavefield with  first `it` timesteps.
+- **Input:** 2D elastics parameters (`Vp, Vs`, $\rho$) and `Vx` wavefield with  first `it` timesteps. 100 Vs and Vp model used in this project. The velocity model includes homogeneous medium with one high velocity circle inside.
 - **Output:** `Vx` Wavefields with 300 timesteps (shape: `[nx, nz, nt]`)
 - **Loss function:** MSE between predicted and true wavefields
 - **Framework:** PyTorch
