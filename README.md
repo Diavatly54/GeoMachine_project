@@ -58,6 +58,24 @@ for epoch in range(num_epochs):
 
 
 ---
+
+## 4. Results
+
+The trained FNO model can accurately approximate the wavefield given unseen velocity models.
+
+Qualitative Comparison:
+
+Performance:
+
+Speedup: ~50x compared to finite-difference method
+
+MSE: ~1e-4 on test set
+
+Generalization: good performance on unseen geological patterns
+
+
+---
+
 ## 4. Results
 The trained FNO model can accurately approximate the wavefield given unseen velocity models.
 
@@ -83,11 +101,16 @@ Large-scale simulations in exploration geophysics
 
 Future work includes extending to 3D models, multi-component wavefields, and inverse problems.
 
+
+---
+
 🔗 References
 1. [Fourier Neural Operator paper](https://arxiv.org/abs/2010.08895)
 
 
 2. [Learning to solve the elastic wave equation with Fourier neural operators]([https://arxiv.org/abs/2010.08895](https://library.seg.org/doi/epub/10.1190/geo2022-0268.1))
+
+---
 
 
 
