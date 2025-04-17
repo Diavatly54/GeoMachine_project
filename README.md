@@ -15,7 +15,9 @@ Forward modeling is a key component in seismic imaging, used to simulate how sei
 - Time-consuming simulations
 - Difficulty scaling to large datasets
 
-We aim to train a neural operator that can learn this complex physical mapping and generalize across multiple velocity models.
+I aim to train a neural operator that can learn this complex physical mapping and generalize across multiple velocity models with similar pattern in 
+![wavefield](output.gif)
+Figure 1. Vx wavefield propagation calculated from FTDT.
 
 ---
 
@@ -31,16 +33,15 @@ FNO is a type of neural operator designed to learn mappings between infinite-dim
 In this project, I aim to train the model for PSV operator to get the seismic wavefield. I utilized the OCFNO (One-connection FNO)
 
 ![OCFNO1](workflow.jpeg)
-Figure 1: The structure comparison between original FNO and One-connection FNO. C is convolution; Uₗ and U_l+1 are the input and the output of the lth Fourier layer, respectively; B - bach-normalization operation; $F_c$ and $F_c^{-1}$ are the forward FFT and inverse FFT with respect to the c direction $c \in (x, z)$ in space; $\sigma$ is the activation function; $\kappa_l$ is 1D kernel parameter for the 1D convolution in operation C in the lth Fourier layer. $\theta_{x,l}$ and $\theta_{z,l}$ are the complex weight tensors used for multiplication in the spatial Fourier domain in the lth Fourier layer. The blue arrows indicate the data flow direction and black arrows indicate that parameters are added to the computation (https://library.seg.org/doi/epub/10.1190/geo2022-0268.1).
+Figure 2: The structure comparison between original FNO and One-connection FNO. C is convolution; Uₗ and U_l+1 are the input and the output of the lth Fourier layer, respectively; B - bach-normalization operation; $F_c$ and $F_c^{-1}$ are the forward FFT and inverse FFT with respect to the c direction $c \in (x, z)$ in space; $\sigma$ is the activation function; $\kappa_l$ is 1D kernel parameter for the 1D convolution in operation C in the lth Fourier layer. $\theta_{x,l}$ and $\theta_{z,l}$ are the complex weight tensors used for multiplication in the spatial Fourier domain in the lth Fourier layer. The blue arrows indicate the data flow direction and black arrows indicate that parameters are added to the computation (https://library.seg.org/doi/epub/10.1190/geo2022-0268.1).
 
 ---
 
 ## 3. Training Setup
 
-- **Input:** 2D elastics parameters (`Vp, Vs`, $\rho$)
-- **Output:** Wavefields (e.g., `Vx`, shape: `[nx, nz, nt]`)
+- **Input:** 2D elastics parameters (`Vp, Vs`, $\rho$) and `Vx` wavefield with  first `it` timesteps.
+- **Output:** `Vx` Wavefields with 300 timesteps (shape: `[nx, nz, nt]`)
 - **Loss function:** MSE between predicted and true wavefields
-- **Data format:** `.mat` files converted to `.pt` for PyTorch
 - **Framework:** PyTorch + Neural Operator Library (`neuralop` or custom FNO implementation)
 
 ---
