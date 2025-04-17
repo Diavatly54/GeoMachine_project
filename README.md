@@ -46,6 +46,17 @@ Figure 2: The structure comparison between original FNO and One-connection FNO. 
 - **Output:** `Vx` Wavefields with 300 timesteps (shape: `[nx, nz, nt]`)
 - **Loss function:** MSE between predicted and true wavefields
 - **Framework:** PyTorch
++ Training loss
+
+
+![Training_loss](lost_train.png)
+
++ Test loss
+
+
+![Loss test](loss_test.png)
+
+
 
 ---
 
@@ -57,15 +68,7 @@ Qualitative Comparison:
 Performance: 
 Speedup: ~3x compared to finite-difference method
 Loss function:
-+ Training loss
 
-
-![Training_loss](lost_train.png)
-
-+ Test loss
-
-
-![Loss test](loss_test.png)
 
 
 
