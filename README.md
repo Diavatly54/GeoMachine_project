@@ -58,10 +58,15 @@ Performance:
 Speedup: ~3x compared to finite-difference method
 Loss function:
 + Training loss
-![](lost_train.png)
+
+
+![Training_loss](lost_train.png)
 
 + Test loss
-![](loss_test.png)
+
+
+![Loss test](loss_test.png)
+
 
 
 ---
