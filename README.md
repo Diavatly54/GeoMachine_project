@@ -62,7 +62,7 @@ Figure 2: The structure comparison between original FNO and One-connection FNO. 
 
 ## 4. Results
 
-The trained OCFNO model is named as 'Final_project.ipynb'.[](https://github.com/Diavatly54/GeoMachine_project/blob/main/Final_project.ipynb)) 
+The trained OCFNO model is named as ['Final_project.ipynb'](https://github.com/Diavatly54/GeoMachine_project/blob/main/Final_project.ipynb)) 
 
 Speedup: ~3x compared to finite-difference method (2s vs 6s)
 Performance:
